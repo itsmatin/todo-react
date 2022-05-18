@@ -1,6 +1,5 @@
-# Dorfjung Testing Project
+# Matin Nikookar Thesis Project
 
-This project was is created as part of Dorfjung's testing session.
 
 ## Initial Setup
 
