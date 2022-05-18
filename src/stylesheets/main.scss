@@ -1,0 +1,10 @@
+@import "./general/typography";
+@import "./general/variables";
+@import "./general/mixins";
+@import "./general/base";
+
+@import "./components/navbar";
+@import "./components/intro";
+@import "./components/task";
+
+@import "./home";

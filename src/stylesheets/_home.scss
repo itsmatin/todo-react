@@ -1,0 +1,98 @@
+form {
+  margin-bottom: 1rem;
+
+  & .title {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    font-weight: 100;
+    font-size: 1.6rem;
+
+    & .date {
+      color: $black;
+      font-size: 1rem;
+
+      &--dark {
+        color: $grey;
+      }
+    }
+  }
+
+  & .form-input-group {
+    height: 3rem;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 1rem;
+
+    & button {
+      height: 100%;
+      width: 4rem;
+      margin-left: -1rem;
+      border-style: solid;
+      border-color: $grey;
+      background-color: $white;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+      }
+      & > svg {
+        height: 1.5rem;
+        width: 1.5rem;
+        fill: $grey;
+      }
+    }
+
+    & label {
+      flex-grow: 1;
+
+      & input {
+        height: 100%;
+        width: 100%;
+        padding: 0 1rem;
+        font-size: 1.2rem;
+        color: $black;
+        background-color: $white;
+        outline: none;
+        border-style: solid;
+        border-color: $grey;
+        border-radius: 0.2rem;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+    }
+  }
+}
+
+section {
+  width: 55%;
+  max-width: 50rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+
+  @include respond(grande) {
+    width: 80%;
+  }
+  @include respond(short-with-sugar) {
+    width: 95%;
+  }
+
+  & .task-group {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 3rem;
+
+    & .task-group-title {
+      width: 100%;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid;
+      border-color: $grey;
+    }
+  }
+}

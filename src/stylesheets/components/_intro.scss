@@ -1,0 +1,40 @@
+.intro {
+  position: absolute;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: $black;
+
+  @include respond(short-with-sugar) {
+    flex-flow: column wrap;
+  }
+
+  &--title {
+    font-size: 3rem;
+    font-weight: 100;
+    @include respond(short-with-sugar) {
+      margin: 0.5rem;
+    }
+  }
+
+  & input {
+    background: none;
+    border: none;
+    border-bottom: 2px solid $grey;
+    font-size: 3rem;
+    outline: none;
+    color: $white;
+    text-align: center;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

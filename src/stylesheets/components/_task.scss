@@ -1,0 +1,65 @@
+.task {
+  min-height: 3.5rem;
+  width: 100%;
+  margin-top: 0.7rem;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid $black;
+
+  &--dark {
+    background-color: #1c1c1c;
+    border: none;
+  }
+
+  &--completed {
+    opacity: 0.6;
+  }
+
+  & .check {
+    min-height: calc(3.5rem - 5px);
+    min-width: calc(3.5rem - 5px);
+    margin-left: 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $black;
+    cursor: pointer;
+
+    &--dark {
+      background-color: $black;
+    }
+
+    & > svg {
+      fill: $grey;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+
+  & .text {
+    flex-grow: 1;
+    padding-left: 2rem;
+    color: $white;
+    word-break: break-word;
+    color: $black;
+
+    &--completed {
+      text-decoration: line-through;
+    }
+    &--dark {
+      color: $white;
+    }
+  }
+
+  & > svg {
+    fill: $grey;
+    width: 1rem;
+    height: 1rem;
+    min-width: 1rem;
+    min-height: 1rem;
+    margin: 0 1rem;
+    cursor: pointer;
+  }
+}
